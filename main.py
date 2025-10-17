@@ -82,7 +82,7 @@ def youtube_ID(request: all):
         VIDEO_ID+=request.url[i]
         i+=1 
     
-    API_KEY = "AIzaSyCNwsKjsLaJul3PNWAMQzSObplPShcN36A"
+    API_KEY = "your_api_key"
 
     youtube = build('youtube', 'v3', developerKey=API_KEY)
     response = youtube.videos().list(
@@ -128,7 +128,7 @@ def youtube_ID(request: all):
 
 @app.post('/Instagram')
 def instagram(request: instagram):
-    supadata = Supadata(api_key="sd_c68557c0d66ac51c04847ee1c400b00a")
+    supadata = Supadata(api_key="[your_api_key")
 
     # Get transcript as plain text
     transcript = supadata.transcript(url=request.url, text=True)
@@ -173,3 +173,4 @@ def results(response):
     
 
     
+
