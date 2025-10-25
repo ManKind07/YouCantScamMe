@@ -12,10 +12,6 @@ from supadata import Supadata
 
 app = FastAPI()
 
-title = "No info"
-description = "No info"
-transcript = "No info"
-
 
 
 app.add_middleware(
@@ -173,5 +169,6 @@ def results(response):
     
 
     
+
 
 
