@@ -128,7 +128,7 @@ def youtube_ID(request: all):
 
 @app.post('/Instagram')
 def instagram(request: instagram):
-    supadata = Supadata(api_key="[your_api_key")
+    supadata = Supadata(api_key="[your_api_key]")
 
     # Get transcript as plain text
     transcript = supadata.transcript(url=request.url, text=True)
@@ -173,4 +173,5 @@ def results(response):
     
 
     
+
 
